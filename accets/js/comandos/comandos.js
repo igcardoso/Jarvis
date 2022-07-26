@@ -76,7 +76,18 @@
 
         }, 2000);
       }
-     
+      
+      if (resultSpeak.match(/Aurora/)) {
+
+        resultSpeaker.innerHTML = 'Sim senhor';
+        
+        setTimeout(function () {
+          simSenhor.play();
+          window.location.href = 'https://www.google.com.br/search?q=' + resultado[1];
+
+        }, 2000);
+      }
+      
     },
       false);
 
