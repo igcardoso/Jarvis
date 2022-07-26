@@ -123,7 +123,7 @@
         }, 2000);
       }
       
-      if (resultSpeak.match(/aurura tá aí/)) {
+      if (resultSpeak.match(/Aurura tá aí/)) {
 
         resultSpeaker.innerHTML = 'A sua disposição senhor';
 
@@ -133,7 +133,7 @@
         }, 2000);
       }
       
-      if (resultSpeak.match(/aurora/)) {
+      if (resultSpeak.match(/Aurora/)) {
 
         resultSpeaker.innerHTML = 'Estou aqui, senhor';
 
