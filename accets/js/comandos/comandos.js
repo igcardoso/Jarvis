@@ -82,7 +82,7 @@
         resultSpeaker.innerHTML = 'Sim senhor';
         
         setTimeout(function () {
-          window.location.href = 'https://www.google.com.br/search?q=' + resultado[1];
+          window.location.href = 'https://www.google.com.br/search?q=';
 
         }, 2000);
       }
