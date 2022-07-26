@@ -60,9 +60,9 @@
           bemVindoSenhor.play();
           resultSpeaker.innerHTML = 'Bem vindo senhor';
           break;
-          case 'Aurora':
-          aSuaDisposicao.play();
+        case 'Aurora':
           resultSpeaker.innerHTML = 'Bem vindo senhor';
+          aSuaDisposicao.play();
           break;
         case 't**********':
           resultSpeaker.innerHTML = 'Vai toma nu cu você seu arrombado'
