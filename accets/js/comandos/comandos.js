@@ -60,6 +60,10 @@
           bemVindoSenhor.play();
           resultSpeaker.innerHTML = 'Bem vindo senhor';
           break;
+          case 'Aurora':
+          aSuaDisposicao.play();
+          resultSpeaker.innerHTML = 'Bem vindo senhor';
+          break;
         case 't**********':
           resultSpeaker.innerHTML = 'Vai toma nu cu você seu arrombado'
           break;
@@ -73,16 +77,6 @@
           simSenhor.play();
           var resultado = resultSpeak.split('buscar por');
           window.location.href = 'https://www.google.com.br/search?q=' + resultado[1];
-
-        }, 2000);
-      }
-      
-      if (resultSpeak.match(/Aurora/)) {
-
-        resultSpeaker.innerHTML = 'Sim senhor';
-        
-        setTimeout(function () {
-          window.location.href = 'https://www.google.com.br/search?q=';
 
         }, 2000);
       }
