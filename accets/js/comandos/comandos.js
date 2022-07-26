@@ -3,14 +3,14 @@
 
   var speakBtn = document.querySelector('#speakbt');
   var resultSpeaker = document.querySelector('#resultSpeak');
-  var naoOuvi = new Audio('../accets/media/audio/voz/testeDeVoz.m4a');
-  var testeDeVoz = new Audio('../accets/media/audio/voz/testeDeVoz.m4a');
-  var aSuaDisposicao = new Audio('../accets/media/audio/voz/aSuaDisposicao.m4a');
-  var estouAqui = new Audio('../accets/media/audio/voz/estouAqui.m4a');
-  var Ok = new Audio('../accets/media/audio/voz/Ok.m4a');
-  var simSenhor = new Audio('../accets/media/audio/voz/simSenhor.m4a');
-  var comoQuiserSenhor = new Audio('../accets/media/audio/voz/comoQuiserSenhor.m4a');
-  var bemVindoSenhor = new Audio('../accets/media/audio/voz/bemVindoSenhor.m4a');
+  var naoOuvi = new Audio('../accets/media/testeDeVoz.m4a');
+  var testeDeVoz = new Audio('../accets/media/testeDeVoz.m4a');
+  var aSuaDisposicao = new Audio('../accets/media/aSuaDisposicao.m4a');
+  var estouAqui = new Audio('../accets/media/estouAqui.m4a');
+  var Ok = new Audio('../accets/media/Ok.m4a');
+  var simSenhor = new Audio('../accets/media/simSenhor.m4a');
+  var comoQuiserSenhor = new Audio('../accets/media/comoQuiserSenhor.m4a');
+  var bemVindoSenhor = new Audio('../accets/media/bemVindoSenhor.m4a');
 
   if (window.SpeechRecognition || window.webkitSpeechRecognition) {
 
