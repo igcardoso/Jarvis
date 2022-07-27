@@ -10,7 +10,7 @@
 
 
 :root {
-  
+
   /**
    * colors
    */
@@ -27,7 +27,7 @@
   --main-color-theme: rgb(255,255,255);
   --Mensalidadepaga: rgb(38,255,38);
   --Mensalidadependente: rgb(255,81,81);
-  
+
   /**
    * status display
    */
@@ -35,29 +35,29 @@
   --none-none: none;
   --none: none;
   --plus-none: block;
-  
+
   /**
    * animations
    */
-   
-   --animation-top-popup: popup-top 1s ease-in-out forwards;
-   --animation-bottom-popup: popup-bottom 0.7s ease-in-out forwards;
-   --animation-left-popup: popup-left 1.2s ease-in-out forwards;
-   --animation-retorno: slideInOut 2s ease-in-out forwards;
-   --animation-retorno-1: slideInOut 2.1s ease-in-out forwards;
-   --animation-retorno-2: slideInOut 2.3s ease-in-out forwards;
-   --animation-retorno-3: slideInOut 3.1s ease-in-out forwards;
-   --animation-retorno-4: slideInOut 3.3s ease-in-out forwards;
-   --animation-retorno-5: slideInOut 3.9s ease-in-out forwards;
-   --animation-retorno-6: slideInOut 4.1s ease-in-out forwards;
-   --animation-retorno-7: slideInOut 4.1s ease-in-out forwards;
-   --animation-retorno-8: slideInOut 1s ease-in-out infinite;
-   
-   /**
+
+  --animation-top-popup: popup-top 1s ease-in-out forwards;
+  --animation-bottom-popup: popup-bottom 0.7s ease-in-out forwards;
+  --animation-left-popup: popup-left 1.2s ease-in-out forwards;
+  --animation-retorno: slideInOut 2s ease-in-out forwards;
+  --animation-retorno-1: slideInOut 2.1s ease-in-out forwards;
+  --animation-retorno-2: slideInOut 2.3s ease-in-out forwards;
+  --animation-retorno-3: slideInOut 3.1s ease-in-out forwards;
+  --animation-retorno-4: slideInOut 3.3s ease-in-out forwards;
+  --animation-retorno-5: slideInOut 3.9s ease-in-out forwards;
+  --animation-retorno-6: slideInOut 4.1s ease-in-out forwards;
+  --animation-retorno-7: slideInOut 4.1s ease-in-out forwards;
+  --animation-retorno-8: slideInOut 1s ease-in-out infinite;
+
+  /**
     * transition dalay
     */
-    
-    --transitions: 1s left,1s width,1s opacity,1s;
+
+  --transitions: 1s left,1s width,1s opacity,1s;
 }
 
 /*-----------------------------------*\
@@ -163,11 +163,85 @@
 }
 
 body {
-  background-image: linear-gradient(to bottom, var(--main-background), var(--second-background));
-  height: 100vh;
+  background: #b9b9b9;
   color: #ffffff;
 }
 
+.circle-top-one {
+  padding: 12rem;
+  border-bottom-left-radius: 100%;
+  border: 0;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  position: fixed;
+  top: 0;
+  left: auto;
+  right: 0;
+  background: 0;
+  /*
+  background: var(--second-light-background);*/
+  z-index: 10;
+}
+
+.circle-top-two {
+  padding: 9rem;
+  border-bottom-right-radius: 100%;
+  border: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: auto;
+  background: #ffffff;
+  z-index: 10;
+}
+
+.circle {
+  position: absolute;
+  top: 47%;
+  left: 1rem;
+  padding: 2rem;
+  border-radius: 100%;
+  background: linear-gradient(-26deg, rgb(179,225,244) 50%, rgb(0,173,246) 100%);
+  list-style-type: none;
+}
+
+.circle-bottom-one {
+  padding: 6rem;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 50%;
+  border: 0;
+  position: fixed;
+  top: auto;
+  bottom: 0;
+  left: auto;
+  right: 0;
+  background: #000;
+  z-index: 10;
+}
+
+.circle-bottom-two {
+  padding: 9rem;
+  border-top-right-radius: 100%;
+  border: 0;
+  position: fixed;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: auto;
+  background: rgb(123,0,255);
+  background-image: linear-gradient(-26deg, rgb(179,225,244) 50%, rgb(0,173,246) 100%);
+  z-index: 10;
+}
+
+.comand {
+  border-radius: 8em;
+  border: 0;
+  padding: 1rem;
+  background: #000000;
+  color: #ffffff;
+  font-weight: 800;
+}
+/*
 .gradient {
   background: rgba(0,0,0,);
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.0) 0, rgba(0, 0, 0, 0) 2%, #000 100%);
@@ -178,15 +252,17 @@ body {
   height: 100vh;
   z-index: 0;
 }
-
+*/
 .conteiner {
-    position: relative;
-    width: 100%;
-    max-width: 480px;
-    text-align: center;
-    padding-top: 10%;
-    margin-left: auto;
-    margin-right: auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 480px;
+  text-align: center;
+  padding-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 13;
 }
 
 .name-assistent {
@@ -195,89 +271,45 @@ body {
 }
 
 .search {
-    display: inline-block;
-    width: 100%;
-    margin-top: 40px;
+  display: inline-block;
+  width: 100%;
+  margin-top: 40px;
 }
 
 #speakbt {
   animation: var(--animation-top-popup);
   transition: var(--transitions);
-    display: block;
-    width: 100px;
-    height: 50px;
-    border-radius: 8em;
-    margin: 0 auto;
-    background-color: white;
-    color: black;
-    cursor: pointer;
-    font-size: 1em;
-    font-weight: 700;
-    -webkit-transition: border-color 0.2s;
-    transition: border-color 0.2s;
-    -webkit-transition: background-color 0.2s;
-    transition: background-color 0.2s;
+  display: block;
+  width: 100px;
+  height: 50px;
+  border-radius: 8em;
+  border: 0;
+  margin: auto;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 700;
+  -webkit-transition: border-color 0.2s;
+  transition: border-color 0.2s;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
 }
 
 #speakbt:active {
-    background-color: #ECF7F3;
+  background-color: #ECF7F3;
 }
 
 #resultSpeak {
-    position: relative;
-    display: block;
-    width: 280px;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: 700;
-    font-size: 1.2em;
-    margin-top: 40px;
-}
-
-.l1 {
-  animation: var(--animation-retorno);
-  transition: var(--transitions);
-}
-
-.l2 {
-  animation: var(--animation-retorno-1);
-  transition: var(--transitions);
-}
-
-.l3 {
-  animation: var(--animation-retorno-2);
-  transition: var(--transitions);
-}
-
-.l4 {
-  animation: var(--animation-retorno-3);
-  transition: var(--transitions);
-}
-
-.l5 {
-  animation: var(--animation-retorno-4);
-  transition: var(--transitions);
-}
-
-.l6 {
-  animation: var(--animation-retorno-5);
-  transition: var(--transitions);
-}
-
-.l7 {
-  animation: var(--animation-retorno-6);
-  transition: var(--transitions);
-}
-
-.l8 {
-  animation: var(--animation-retorno-7);
-  transition: var(--transitions);
-}
-
-.resultSpeak::after {
-  animation: var(--animation-retorno-8);
-  transition: var(--transitions);
-  content: "|";
+  position: relative;
+  display: block;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-top: 40px;
+  font-family: Sans-Serif;
 }
 
 @media screen and (max-width: 600px) {}
